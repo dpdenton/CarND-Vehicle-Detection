@@ -46,15 +46,15 @@ Here is an example using the `Y` channel in the `YCrCb` color space and HOG para
 
 ####2. Explain how you settled on your final choice of HOG parameters.
 
-I tried various combinations of parameters and the parameters `orientations=9`, `pixels_per_cell=(8, 8)` and `cells_per_block=(2, 2) performed well on the test set (~ 99%) and was able to train in < 20 seconds and build features in < 60 seconds.
+I tried various combinations of parameters and the parameters `orientations=9`, `pixels_per_cell=(8, 8)` and `cells_per_block=(2, 2)` performed well on the test set (~ 99%) and was able to train in < 2 seconds and build features in < 60 seconds.
 
-There was no significant improvement choosing parameters which provided more features, e.g more orientations or fewer pixels\_per\_cell and the increased learning and extraction time made these options prohibitive.
+There was no significant improvement choosing parameters which provided more features, e.g more orientations or fewer `pixels_per_cell` and the increased learning and extraction time made these options prohibitive.
 
 ####3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
 
 The linear SVM was trained in `train.py` file. The features for the SVM were extracted in lines 59 - 73, based on the params argument passed to the function.
 
-The parameters are defined on line 20 in the `params dict` on line 20 in `pipeline.py`. 
+The parameters are defined in `conts.py`
 
 ###Sliding Window Search
 
@@ -64,7 +64,7 @@ The sliding window search is implement in lines ~ 105 to 180 in `pipeline.py`.
 
 The sliding window search starts from halfway down the image, as on a flat road vehicles would not be above this point.
 
-The sliding window searches over 3 scales: 1.5, 2. as this typically covers all sizes of vehicles. 
+The sliding window searches over 3 scales: 1.5, 2 and 3 as this typically covers all sizes of vehicles. 
 
 I chose a cell step of 1 to maxmise the chances of detecting a vehicle. This resulted in more detections being made, a 'hotter' heatmap, allowing a higher threshold to be applied, which results in more false positives being removed.
 
@@ -85,7 +85,7 @@ Final output:
 
 ####1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
 
-Here's a [link to my video result](https://raw.githubusercontent.com/dpdenton/CarND-Vehicle-Detection/master/vide/project_out.mp4)
+Here's a [link to my video result](https://raw.githubusercontent.com/dpdenton/CarND-Vehicle-Detection/master/output_videos/project_video.mp4)
 
 
 ####2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
@@ -98,10 +98,10 @@ I recorded the positions of positive detections in each frame of the video.  Fro
 
 ####1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-The SVM was training well and produce a result of > 99% accuracy on the test set. This transalted reasonably well to the test images and the videos. A few false positives were detected, however this is to be expected give its making approx 5000 predictions every image. The more concerning issue is, at times, it doesn't generate enough detections when the window is over a vehicle. This apeared to be a problem when a vehicle is partially in shot, or when it's at a wide angle and the rear of the vehicle is at a significant angle in relation to the camera. This may be due to the `vehicle` images in the training data be prodominantly of the rear of vehicles, and few at any significant angle.
+The SVM was training well and produced a result of > 99% accuracy on the test set. This transalted reasonably well to the test images and the videos. A few false positives were detected, however this is to be expected give its making approx 5000 predictions every image. The more concerning issue is, at times, it doesn't generate enough detections when the window is over a vehicle. This apeared to be a problem when a vehicle is partially in shot, or when it's at a wide angle and the rear of the vehicle is at a significant angle in relation to the camera. This may be due to the `vehicle` images in the training data be prodominantly of the rear of vehicles, and few at any significant angle.
 
 The bounding boxes in my model weren't particularly accurate. Whilst they detected the vehicle correctly, they often only partially bound the vehicle, or there was too much space between the vehicle and the bound. 
 
-To improve the pipeline I'd investigate developing a basic, relatively big non-overlapping 'high-step' sliding window to quickly scan the frame and detect potential vehicles, then pass those detections to a more sophisticated model, like a conv neural net, to determine if it's actually a vehicle, and if it is, provide a more accurate bound for the vehicle.
+To improve the pipeline I'd investigate developing a basic, relatively big non-overlapping 'high-step' sliding window to quickly scan the frame and detect potential vehicles, then pass those detections to a more sophisticated model, like a conv neural net, to determine if it's actually a vehicle, and if it is, provide a more accurate bound for the vehicle using features from the model, such as the vehicles edges, assuming the models extracts those in its effort to classify the image.
 
 I would also look to improve the tranining data to provide more car angles, as the detections tend to be more focusses on the rear of a vehicle, perhaps augmenting the data with perspective transforms or additional images of angled vehicles.
