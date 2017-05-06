@@ -9,10 +9,10 @@ HISTOGRAM = "hist"
 params = {
     "ystart": 360,
     "ystop": 720,
-    "scales": [1.5, 2., 3.],
+    "scales": [1.5, 2.],
     "max_sample_size": None,
     "heat_threshold": 4,
-    "smoothing": ("avg", 25),
+    "smoothing": ("avg", 10),
     "features": {
         HOG: {
             "hog_channel": "ALL",  # options 0, 1, 2, "ALL"
