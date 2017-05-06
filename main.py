@@ -24,35 +24,30 @@ import matplotlib.pyplot as plt
 # use outer edge of heatmap to draw bounds / figure out a better way of doing this
 # use historical bounds to better predict future bounds
 
-HOG = "hog"
-SPATIAL = "spatial"
-HISTOGRAM = "hist"
+from moviepy.editor import VideoFileClip
 
-from utils import *
+import train
+import pipeline
 
-TEST_IMAGES_DIR = "./test_images"
-
-
+from conts import *
 
 if "__main__" == __name__:
 
-    import pipeline
+    _train = False
+    _test = False
+    _video = True
 
-    test = False
+    if _train:
+        svc, X_scaler = train.run(params, max_sample_size=6000, save=True)
 
-    if test:
-
+    if _test:
         for fname in [os.path.join(TEST_IMAGES_DIR, f) for f in os.listdir(TEST_IMAGES_DIR)]:
-
             if "" in fname:
                 img = plt.imread(fname)
                 draw_img = pipeline.process_image(img, fname=fname, save=True)
 
-    else:
-
-        from moviepy.editor import VideoFileClip
-
-        white_output = 'project_video_out.mp4'
+    if _video:
+        white_output = 'project_video_out_v2.mp4'
         clip1 = VideoFileClip("project_video.mp4")
         white_clip = clip1.fl_image(pipeline.process_image)
         white_clip.write_videofile(white_output, audio=False)

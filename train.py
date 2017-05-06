@@ -1,33 +1,9 @@
-import os
 import pickle
-import matplotlib.pyplot as plt
-import numpy as np
-import cv2
-import glob
-import time
-from sklearn.svm import LinearSVC
-from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
-
 from utils import *
-
-HOG = "hog"
-SPATIAL = "spatial"
-HISTOGRAM = "hist"
-
-SVC_PATH = "./pickle/svc.obj"
-X_SCALER_PATH = "./pickle/X_scaler.obj"
+from conts import *
 
 def run(params, max_sample_size=None, retrain=True, save=True):
-
-    if not retrain and os.path.isfile(SVC_PATH) and os.path.isfile(X_SCALER_PATH):
-
-        with open(SVC_PATH, "rb") as f:
-            svc = pickle.load(f)
-        with open(X_SCALER_PATH, "rb") as f:
-            X_scaler = pickle.load(f)
-
-        return svc, X_scaler
 
     # non car image
     noncar_images = glob.glob("non-vehicles/Extras/*.png")
@@ -42,7 +18,7 @@ def run(params, max_sample_size=None, retrain=True, save=True):
     gti_car_images += glob.glob("vehicles/GTI_Right/*.png")
     # KITTI image are not time-series
     kitti_car_images = glob.glob("vehicles/KITTI_extracted/*.png")
-    car_images = gti_car_images + kitti_car_images
+    car_images = kitti_car_images
     print("{} car images...".format(len(car_images)))
 
     # Reduce the sample size

@@ -2,12 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95810c28-dcbc-4656-b626-e9044b1b70d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pipeline.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/train.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/writeup.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/example_car.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/example_noncar.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/conts.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/boxed_straight_lines1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/boxed_straight_lines2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/boxed_test1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/boxed_test2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/boxed_test3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/boxed_test4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/boxed_test5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/boxed_test6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/boxed_test_gradient.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/final_straight_lines1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/final_straight_lines2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/final_test1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/final_test2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/final_test3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/final_test4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/final_test5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/final_test6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/final_test_gradient.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/final_video.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/heat_straight_lines1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/heat_straight_lines2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/heat_test1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/heat_test2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/heat_test3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/heat_test4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/heat_test5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/heat_test6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/heat_test_gradient.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/heat_video.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/straight_lines1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/output_images/straight_lines2.jpg" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/output_images/hog_image_Ychannel.jpg" afterPath="$PROJECT_DIR$/examples/hog_image_Ychannel.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pickle/X_scaler.obj" afterPath="$PROJECT_DIR$/pickle/X_scaler.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pickle/svc.obj" afterPath="$PROJECT_DIR$/pickle/svc.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pipeline.py" afterPath="$PROJECT_DIR$/pipeline.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train.py" afterPath="$PROJECT_DIR$/train.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils.py" afterPath="$PROJECT_DIR$/utils.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,17 +55,19 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/CarND_Vehicle_Detection$train.coverage" NAME="train Coverage Results" MODIFIED="1493746616792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CarND_Vehicle_Detection$process.coverage" NAME="process Coverage Results" MODIFIED="1493750823574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CarND_Vehicle_Detection$pipeline.coverage" NAME="pipeline Coverage Results" MODIFIED="1493997224983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CarND_Vehicle_Detection$pipeline.coverage" NAME="pipeline Coverage Results" MODIFIED="1494077125386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="train.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/train.py">
+      <file leaf-file-name="conts.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="61" column="28" lean-forward="false" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
-              <folding />
+            <state relative-caret-position="238">
+              <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+              <folding>
+                <element signature="e#550#562#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -37,8 +75,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="48" column="40" lean-forward="true" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+            <state relative-caret-position="373">
+              <caret line="50" column="44" lean-forward="false" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -46,57 +84,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils.py">
+      <file leaf-file-name="pipeline.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipeline.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="92" column="29" lean-forward="false" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="29" />
+            <state relative-caret-position="2601">
+              <caret line="153" column="28" lean-forward="false" selection-start-line="153" selection-start-column="28" selection-end-line="153" selection-end-column="28" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hog_image_Ychannel.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/output_images/hog_image_Ychannel.jpg">
+      <file leaf-file-name="image1.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/non-vehicles/GTI/image1.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="writeup.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/writeup.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="323">
-                <caret line="41" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
+      <file leaf-file-name="image2.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/non-vehicles/GTI/image2.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pipeline.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipeline.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="233" column="56" lean-forward="false" selection-start-line="233" selection-start-column="56" selection-end-line="233" selection-end-column="56" />
-              <folding>
-                <element signature="e#2#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-              <folding />
-            </state>
+      <file leaf-file-name="image6.png" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/non-vehicles/GTI/image6.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -125,8 +142,9 @@
       <find>cvt</find>
       <find>mpimg.imread</find>
       <find>draw_img</find>
-      <find>print</find>
       <find>convert</find>
+      <find>print</find>
+      <find>threshold</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -135,13 +153,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/process.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/writeup.md" />
+        <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/train.py" />
-        <option value="$PROJECT_DIR$/pipeline.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/pipeline.py" />
+        <option value="$PROJECT_DIR$/conts.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -184,6 +203,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CarND-Vehicle-Detection" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CarND-Vehicle-Detection" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vehicles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -194,6 +227,16 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../CarND-Advanced-Lane-Lines" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="prop_add_unversioned_files" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DPD\PycharmProjects\udacity\CarND\CarND-Vehicle-Detection\examples" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DPD\PycharmProjects\udacity\CarND\CarND-Vehicle-Detection\examples" />
+      <recent name="C:\Users\DPD\PycharmProjects\udacity\CarND\CarND-Vehicle-Detection" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -451,13 +494,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18835099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18835099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4762684" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29787233" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -487,54 +529,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_images/test2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="61" column="15" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_images/test2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_images/test1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output_images/straight_lines2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output_images/test1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -565,62 +559,33 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output_images/test_gradient.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output_images/straight_lines1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output_images/final_video.jpg">
+    <entry file="file://$PROJECT_DIR$/output_images/heat_test3.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output_images/boxed_straight_lines1.jpg">
+    <entry file="file://$PROJECT_DIR$/test_images/test4.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output_images/boxed_straight_lines2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/writeup.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="323">
+            <caret line="41" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output_images/boxed_test2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output_images/boxed_test1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output_images/boxed_test3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output_images/boxed_test4.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output_images/boxed_test6.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output_images/boxed_test_gradient.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output_images/boxed_test5.jpg">
+    <entry file="file://$PROJECT_DIR$/output_images/hog_image_Ychannel.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -635,6 +600,59 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="327" column="14" lean-forward="false" selection-start-line="327" selection-start-column="14" selection-end-line="327" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/example_noncar.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/example_car.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_images/final_video.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#13#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_images/heat_video.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_images/test_gradient.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/output_images/heat_test1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -645,17 +663,12 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output_images/heat_test3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output_images/heat_test4.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output_images/heat_test_gradient.jpg">
+    <entry file="file://$PROJECT_DIR$/output_images/heat_test5.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -665,7 +678,47 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output_images/heat_test5.jpg">
+    <entry file="file://$PROJECT_DIR$/output_images/heat_test_gradient.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_images/boxed_straight_lines1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_images/boxed_test1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_images/boxed_test6.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_images/boxed_test3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_images/boxed_test2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_images/boxed_test4.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_images/boxed_test5.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_images/boxed_straight_lines2.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -715,71 +768,54 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_images/test4.jpg">
+    <entry file="file://$PROJECT_DIR$/output_images/boxed_test_gradient.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/writeup.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="323">
-            <caret line="41" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train.py">
+    <entry file="file://$PROJECT_DIR$/conts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="61" column="28" lean-forward="false" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipeline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="233" column="56" lean-forward="false" selection-start-line="233" selection-start-column="56" selection-end-line="233" selection-end-column="56" />
+        <state relative-caret-position="238">
+          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding>
-            <element signature="e#2#20#0" expanded="true" />
+            <element signature="e#550#562#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="48" column="40" lean-forward="true" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+        <state relative-caret-position="373">
+          <caret line="50" column="44" lean-forward="false" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
+    <entry file="file://$PROJECT_DIR$/pipeline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="92" column="29" lean-forward="false" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="29" />
+        <state relative-caret-position="2601">
+          <caret line="153" column="28" lean-forward="false" selection-start-line="153" selection-start-column="28" selection-end-line="153" selection-end-column="28" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output_images/hog_image_Ychannel.jpg">
+    <entry file="file://$PROJECT_DIR$/non-vehicles/GTI/image1.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/non-vehicles/GTI/image2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/non-vehicles/GTI/image6.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
